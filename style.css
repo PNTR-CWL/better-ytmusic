@@ -1,0 +1,489 @@
+html:not(.style-scope) #mini-guide-background,
+ytmusic-app-layout #mini-guide-background,
+div#mini-guide-background[aria-hidden="true"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Ukrycie nav-bar-background */
+#nav-bar-background.style-scope.ytmusic-app-layout,
+div#nav-bar-background[aria-hidden="true"],
+ytmusic-app-layout #nav-bar-background {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Modyfikacja opacity dla różnych stanów */
+ytmusic-app-layout[player-page-open] #nav-bar-background.ytmusic-app-layout, 
+ytmusic-app-layout.content-scrolled #nav-bar-background.ytmusic-app-layout, 
+ytmusic-app-layout.content-scrolled #nav-bar-divider.ytmusic-app-layout, 
+ytmusic-app-layout[is-bauhaus-sidenav-enabled][player-page-open] #mini-guide-background.ytmusic-app-layout {
+  opacity: 0 !important;
+}
+
+
+/* Zaokrąglone utwory w kolejce w stylu Material UI */
+ytmusic-player-queue-item {
+    margin: 6px 8px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    transition: background-color 0.2s ease-in-out !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  }
+  
+  /* Efekt hover dla elementów w kolejce */
+  ytmusic-player-queue-item:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  /* Aktualnie odtwarzany utwór */
+  ytmusic-player-queue-item[selected] {
+    background-color: rgb(211, 211, 211, 0.15) !important; /* Używamy koloru złotego z twojego motywu */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+  }
+  
+  /* Delikatne animacje */
+  ytmusic-player-queue-item {
+    transform: translateZ(0);
+    transition: all 0.25s cubic-bezier(0.4, 0.0, 0.2, 1) !important;
+  }
+  
+  /* Zwiększenie wewnętrznego marginesu dla lepszego wyglądu */
+  .song-info.ytmusic-player-queue-item {
+    padding: 4px 6px !important;
+  }
+  
+  /* Poprawa czytelności tekstu */
+  .song-title.ytmusic-player-queue-item {
+    font-weight: 500 !important;
+  }
+
+  /* Stylizacja paska przewijania - cienkie i zaokrąglone jak w Zen Browser */
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent !important;
+    border-radius: 10px !important;
+    margin: 2px !important;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(75, 79, 78, 0.1) !important; /* Używamy koloru złotego z motywu z niższą przezroczystością */
+    border-radius: 10px !important;
+    border: 2px solid transparent !important;
+    background-clip: padding-box !important;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(229, 193, 0, 0.1) !important; /* Jaśniejszy odcień przy hover */
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: transparent !important;
+  }
+  
+  /* Specjalne traktowanie dla elementów, które mają dodatkowe scrollbary */
+  .scroll-container {
+    scrollbar-width: thin !important;
+    scrollbar-color: rgba(229, 193, 0, 0.3) transparent !important;
+  }
+  
+  /* Zapewnienie, że paski przewijania są widoczne tylko gdy potrzebne */
+  ytmusic-app-layout {
+    overflow: overlay !important;
+    padding-bottom: 90px !important; /* dostosowane do niższej pozycji paska */
+  }
+
+  /* Stylizacja przycisków nawigacyjnych i interfejsu w stylu Material UI */
+
+/* Przyciski sterowania odtwarzaniem (następny, poprzedni, play/pause) */
+paper-icon-button.ytmusic-player-bar,
+tp-yt-paper-icon-button.ytmusic-player-bar,
+.left-controls paper-icon-button,
+.left-controls tp-yt-paper-icon-button,
+.right-controls paper-icon-button,
+.right-controls tp-yt-paper-icon-button {
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  transition: all 0.25s cubic-bezier(0.4, 0.0, 0.2, 1) !important;
+  background-color: rgba(229, 193, 0, 0.05) !important;
+}
+
+/* Efekt hover na przyciskach */
+paper-icon-button.ytmusic-player-bar:hover,
+tp-yt-paper-icon-button.ytmusic-player-bar:hover,
+.left-controls paper-icon-button:hover,
+.left-controls tp-yt-paper-icon-button:hover,
+.right-controls paper-icon-button:hover,
+.right-controls tp-yt-paper-icon-button:hover {
+  background-color: rgba(229, 193, 0, 0.15) !important;
+  transform: scale(1.1) !important;
+}
+
+/* Efekt active (wciśnięcia) na przyciskach */
+paper-icon-button.ytmusic-player-bar:active,
+tp-yt-paper-icon-button.ytmusic-player-bar:active,
+.left-controls paper-icon-button:active,
+.left-controls tp-yt-paper-icon-button:active,
+.right-controls paper-icon-button:active,
+right-controls tp-yt-paper-icon-button:active {
+  background-color: rgba(229, 193, 0, 0.25) !important;
+  transform: scale(0.95) !important;
+}
+
+/* Główny przycisk odtwarzania/pauzy - większy i bardziej widoczny */
+paper-icon-button#play-pause-button,
+tp-yt-paper-icon-button#play-pause-button {
+  background-color: rgba(229, 193, 0, 0.1) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+paper-icon-button#play-pause-button:hover,
+tp-yt-paper-icon-button#play-pause-button:hover {
+  background-color: rgba(229, 193, 0, 0.2) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Stylizacja tytułu odtwarzanego utworu */
+.title.ytmusic-player-bar, 
+.subtitle.ytmusic-player-bar,
+.title.style-scope.ytmusic-player-bar,
+.subtitle.style-scope.ytmusic-player-bar {
+  font-weight: 500 !important;
+  letter-spacing: 0.2px !important;
+}
+
+/* Stylizacja paska postępu - bardziej zaokrąglony */
+#progress-bar.ytmusic-player-bar {
+  --paper-slider-height: 4px !important;
+  --paper-slider-container-height: 14px !important; /* Większa wysokość dla łatwiejszego kliknięcia */
+  --paper-slider-knob-radius: 8px !important; /* Większy uchwyt */
+  border-radius: 4px !important;
+}
+
+/* Uchwyt paska postępu */
+#progress-bar.ytmusic-player-bar {
+  --paper-slider-knob-start-border-color: var(--ytmusic-color-white1) !important;
+  --paper-slider-knob-start-color: var(--ytmusic-color-white1) !important;
+}
+
+/* Zaokrąglenie przycisków akcji (shuffle, repeat) */
+ytmusic-toggle-button-renderer, 
+.toggle-button {
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  transition: background-color 0.2s ease !important;
+}
+
+ytmusic-toggle-button-renderer:hover,
+.toggle-button:hover {
+  background-color: rgba(229, 193, 0, 0.15) !important;
+}
+
+/* Poprawienie wyglądu menu kontekstowego */
+paper-listbox, 
+iron-dropdown,
+tp-yt-paper-listbox {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+paper-item,
+tp-yt-paper-item,
+ytmusic-menu-item {
+  border-radius: 0 !important;
+  transition: background-color 0.2s ease !important;
+}
+
+paper-item:hover,
+tp-yt-paper-item:hover,
+ytmusic-menu-item:hover {
+  background-color: rgba(229, 193, 0, 0.1) !important;
+}
+
+/* === Stylizacja zakładek Następny/Tekst/Podobne === */
+
+/* Kontener zakładek */
+#player-page ytmusic-tabs {
+    margin-bottom: 8px !important; /* Dodaje trochę przestrzeni pod zakładkami */
+  }
+  
+  /* Poszczególne zakładki (Następny, Tekst, Podobne) */
+  #player-page ytmusic-tabs tp-yt-paper-tab {
+    border-radius: 12px !important; /* Zaokrąglenie rogów, spójne z elementami kolejki */
+    margin: 0 4px !important; /* Mały margines poziomy między zakładkami */
+    padding: 8px 16px !important; /* Wewnętrzny odstęp dla lepszego wyglądu */
+    transition: background-color 0.2s ease !important; /* Płynne przejście tła */
+    border-bottom: none !important; /* Usunięcie domyślnego podkreślenia */
+    background-color: rgba(255, 255, 255, 0.05) !important; /* Lekkie tło domyślne, jak w kolejce */
+  }
+  
+  /* Efekt hover na zakładkach */
+  #player-page ytmusic-tabs tp-yt-paper-tab:hover {
+    background-color: rgba(229, 193, 0, 0.15) !important; /* Złoty kolor z motywu przy najechaniu */
+  }
+  
+  /* Aktywna zakładka */
+  #player-page ytmusic-tabs tp-yt-paper-tab[aria-selected="true"],
+  #player-page ytmusic-tabs tp-yt-paper-tab.iron-selected {
+    background-color: rgba(229, 193, 0, 0.25) !important; /* Ciemniejszy złoty dla aktywnej zakładki */
+    color: var(--ytmusic-text-primary) !important; /* Zapewnienie czytelności tekstu */
+    font-weight: 500 !important; /* Pogrubienie tekstu aktywnej zakładki */
+  }
+  
+  /* Ukrycie domyślnego paska zaznaczenia pod zakładkami */
+  #player-page ytmusic-tabs #selectionBar {
+    display: none !important;
+  }
+  
+  /* Stylizacja tekstu wewnątrz zakładek */
+  #player-page ytmusic-tabs tp-yt-paper-tab .tab-content {
+    color: inherit !important; /* Użyj koloru dziedziczonego z zakładki */
+    font-weight: 500 !important; /* Lekkie pogrubienie tekstu */
+    text-transform: none !important; /* Usunięcie ewentualnej transformacji tekstu (np. wielkie litery) */
+    letter-spacing: 0.2px !important; /* Dopasowanie odstępów między literami jak w tytule utworu */
+  }
+
+  /* === Zaokrąglenie okładki aktualnie odtwarzanego utworu === */
+
+/* === Zaokrąglenie okładki i miniatury - Poprawka na szare tło v2 === */
+
+/* --- Główna okładka na stronie odtwarzacza --- */
+
+/* Nadrzędny kontener okładki */
+#player-page #song-image {
+  border-radius: 12px !important;
+  overflow: hidden !important; /* Kluczowe do przycinania */
+  background: none !important; /* Wymuszenie braku tła */
+  box-shadow: none !important; /* Usunięcie domyślnego cienia */
+}
+
+/* Kontener obrazka wewnątrz #song-image */
+#player-page #song-image #img {
+  display: block; /* Upewnij się, że jest blokiem */
+  border-radius: 12px !important;
+  overflow: hidden !important; /* Kluczowe do przycinania */
+  transform: translateZ(0); /* Poprawia renderowanie */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important; /* Cień na tym elemencie */
+  background: none !important; /* Wymuszenie braku tła */
+  border: none !important; /* Usunięcie ewentualnego obramowania */
+}
+
+/* Placeholder (yt-img-shadow) - Cel główny! */
+#player-page #song-image yt-img-shadow {
+  display: block; /* Upewnij się, że jest blokiem */
+  /* Upewniamy się, że ten element też jest zaokrąglony i przycięty */
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  /* Najważniejsze: Całkowite usunięcie tła i cienia z tego elementu */
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Dodatkowa reguła na wszelki wypadek, gdyby #img dostawało tło z innego źródła */
+#player-page #img.ytmusic-player-page {
+    background: none !important;
+}
+
+/* Sam obrazek okładki */
+#player-page #song-image #img img {
+  display: block;
+  /* Zaokrąglenie nie jest tu konieczne, jeśli kontenery mają overflow: hidden, ale nie zaszkodzi */
+  border-radius: 12px !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Wypełnienie kontenera */
+}
+
+
+/* --- Miniatura w dolnym pasku odtwarzania --- */
+
+ytmusic-player-bar .thumbnail-image-wrapper {
+    border-radius: 6px !important; /* Mniejsze zaokrąglenie */
+    overflow: hidden !important; /* Przycinanie */
+    background: none !important; /* Usunięcie tła z wrappera */
+}
+
+/* Usunięcie tła również z placeholdera miniatury */
+ytmusic-player-bar .thumbnail-image-wrapper yt-img-shadow {
+     background: none !important;
+     box-shadow: none !important;
+     border-radius: 6px !important; /* Zaokrąglenie placeholdera */
+     overflow: hidden !important; /* Przycięcie placeholdera */
+ }
+
+/* Sam obrazek miniatury */
+ytmusic-player-bar .image.ytmusic-player-bar {
+    border-radius: 6px !important;
+    display: block;
+}
+
+ytmusic-player#player.style-scope.ytmusic-player-page {
+  background-color: transparent !important;
+}
+
+tp-yt-paper-progress div {
+  transition: width 0.3s ease-in-out !important;
+}
+
+#primaryProgress,
+#secondaryProgress,
+#sliderBar,
+#sliderContainer {
+  transition: transform 1s linear !important;
+  transform-origin: left center !important;
+}
+
+.slider-knob-inner {
+  display: none !important;
+}
+
+#song-media-window {
+  display: none !important;
+}
+
+/* Unoszący się dolny pasek odtwarzacza - cała zawartość delikatnie niżej */
+ytmusic-player-bar {
+  position: fixed !important;
+  bottom: 24px !important;
+  left: 50% !important;
+  transform: translate(-50%, 8px) !important; /* center horizontally and move down 8px */
+  width: 1100px !important;
+  max-width: 98vw !important;
+  margin: 0 !important;            /* remove auto margins */
+  border-radius: 24px !important;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.32), 0 2px 12px rgba(229,193,0,0.10) !important;
+  background: rgba(32,32,32,0.98) !important;
+  z-index: 9999 !important;
+  border: 2px solid rgba(229,193,0,0.10) !important;
+  padding-bottom: 4px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important; /* KLUCZOWE */
+}
+
+/* Ukryj tło pod paskiem odtwarzacza */
+#player-bar-background.style-scope.ytmusic-app-layout {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Pasek postępu zgrywa się z border-radius paska */
+#progress-bar.ytmusic-player-bar {
+  width: 100% !important;
+  margin: 0 0 0 -5px !important; /* przesunięcie bardziej w lewo */
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  background: none !important;
+  max-width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+/* Elementy paska postępu zgrywają się z border-radius */
+#sliderBar,
+#primaryProgress,
+#secondaryProgress,
+#sliderContainer {
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Stylizacja przycisków przewijania zakładek w stylu Material You */
+tp-yt-paper-icon-button#left,
+tp-yt-paper-icon-button#right {
+  background: rgba(229, 193, 0, 0.08) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10) !important;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s !important;
+  width: 36px !important;
+  height: 36px !important;
+  margin: 0 4px !important;
+  color: var(--ytmusic-color-white1, #fff) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 1 !important;
+}
+
+/* Ikona wewnątrz przycisku */
+tp-yt-paper-icon-button#left tp-yt-iron-icon,
+tp-yt-paper-icon-button#right tp-yt-iron-icon {
+  width: 22px !important;
+  height: 22px !important;
+  color: inherit !important;
+}
+
+/* Efekt hover */
+tp-yt-paper-icon-button#left:hover,
+tp-yt-paper-icon-button#right:hover {
+  background: rgba(229, 193, 0, 0.18) !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18) !important;
+  transform: scale(1.08) !important;
+}
+
+/* Efekt aktywacji */
+tp-yt-paper-icon-button#left:active,
+tp-yt-paper-icon-button#right:active {
+  background: rgba(229, 193, 0, 0.28) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.22) !important;
+  transform: scale(0.96) !important;
+}
+
+/* Ukryj przyciski gdy są nieaktywne (opcjonalnie, jeśli domyślnie są hidden) */
+tp-yt-paper-icon-button.hidden {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Ukrycie strzałek przewijania zakładek */
+tp-yt-paper-icon-button#left,
+tp-yt-paper-icon-button#right {
+  display: none !important;
+}
+
+/* Stylizacja side panel w stylu Material You */
+#side-panel {
+  background: rgba(32, 32, 32, 0.9) !important; /* Półprzezroczyste tło */
+  border-radius: 16px !important; /* Zaokrąglone rogi */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important; /* Delikatny cień */
+  padding: 16px !important; /* Wewnętrzne odstępy */
+  margin: 8px !important; /* Zewnętrzne odstępy */
+  overflow: hidden !important; /* Ukrycie elementów wychodzących poza panel */
+  backdrop-filter: blur(8px) !important; /* Efekt rozmycia tła */
+  -webkit-backdrop-filter: blur(8px) !important; /* Rozmycie dla przeglądarek WebKit */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease !important; /* Płynne przejścia */
+}
+
+/* Stylizacja paska głośności */
+#volume-slider {
+  --paper-slider-height: 4px !important;
+  --paper-slider-container-height: 20px !important;
+  --paper-slider-knob-radius: 8px !important;
+  border-radius: 4px !important;
+  /* padding: 8px 0 !important; */
+}
+
+#volume-slider .slider-knob-inner {
+  display: block !important;
+  border-radius: 50% !important;
+  transform: scale(1) !important;
+}
+
+#volume-slider #sliderBar,
+#volume-slider #primaryProgress,
+#volume-slider #secondaryProgress,
+#volume-slider #sliderContainer {
+  transition: none !important;
+}
+
