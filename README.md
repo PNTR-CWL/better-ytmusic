@@ -11,3 +11,7 @@ Options --> Visual Tweaks --> Theme --> Import custom CSS file
 
 <h3>Known issues:</h3>
 Playerbar expands and contracts as it closes and as the song screen is opened or closed
+
+
+### Links:
+[Discord](https://discord.gg/2eCpbXadsC)
