@@ -59,7 +59,20 @@ ytmusic-player-queue-item {
     font-weight: 500 !important;
   }
 
-  /* Scrollbar like in zen browser */
+  .song-info.style-scope.ytmusic-player-queue-item {
+    margin: -11px !important;
+  }
+
+  .style-scope ytmusic-player-page {
+    padding-left: 0px !important;
+  }
+
+  div.content.style-scope.ytmusic-player-page {
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+  }
+
+  /* Scrollbar */
   ::-webkit-scrollbar {
     width: 8px !important;
     height: 8px !important;
@@ -72,14 +85,17 @@ ytmusic-player-queue-item {
   }
   
   ::-webkit-scrollbar-thumb {
-    background: rgba(75, 79, 78, 0.1) !important;
+    background: rgba(123, 124, 124, 0.4) !important;
     border-radius: 10px !important;
     border: 2px solid transparent !important;
     background-clip: padding-box !important;
+    transform: scale(1) !important;
+    transition: all 0.2s ease-in-out !important;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(229, 193, 0, 0.1) !important;
+    background: rgba(123, 124, 124, 0.812) !important;
+    transform: scale(1.1) !important;
   }
   
   ::-webkit-scrollbar-corner {
@@ -88,7 +104,7 @@ ytmusic-player-queue-item {
   
   .scroll-container {
     scrollbar-width: thin !important;
-    scrollbar-color: rgba(229, 193, 0, 0.3) transparent !important;
+    scrollbar-color: rgba(123, 124, 124, 0.4) transparent !important;
   }
   
   ytmusic-app-layout {
@@ -117,7 +133,7 @@ tp-yt-paper-icon-button.ytmusic-player-bar:hover,
 .left-controls tp-yt-paper-icon-button:hover,
 .right-controls paper-icon-button:hover,
 .right-controls tp-yt-paper-icon-button:hover {
-  background-color: rgba(229, 193, 0, 0.15) !important;
+  background-color: rgba(123, 124, 124, 0.4) !important;
   transform: scale(1.1) !important;
 }
 
@@ -128,7 +144,7 @@ tp-yt-paper-icon-button.ytmusic-player-bar:active,
 .left-controls tp-yt-paper-icon-button:active,
 .right-controls paper-icon-button:active,
 right-controls tp-yt-paper-icon-button:active {
-  background-color: rgba(229, 193, 0, 0.25) !important;
+  background-color: rgba(123, 124, 124, 0.4) !important;
   transform: scale(0.95) !important;
 }
 
@@ -176,7 +192,7 @@ ytmusic-toggle-button-renderer,
 
 ytmusic-toggle-button-renderer:hover,
 .toggle-button:hover {
-  background-color: rgba(229, 193, 0, 0.15) !important;
+  background-color: rgba(123, 124, 124, 0.4) !important;
 }
 
 /* Context menu */
@@ -340,8 +356,6 @@ ytmusic-player-bar {
   left: 50% !important;
   transform: translate(-50%, 8px) !important;
   width: calc(100% - 48px) !important;
-  min-width: 600px !important;
-  max-width: 1400px !important;
   margin: 0 !important;
   border-radius: 24px !important;
   box-shadow: 0 12px 36px rgba(0,0,0,0.32), 0 2px 12px rgba(229,193,0,0.10) !important;
@@ -370,8 +384,8 @@ ytmusic-player-bar {
 }
 
 #progress-bar.ytmusic-player-bar {
-  width: 100% !important;
-  margin: 0 0 0 -8px !important;
+  width: calc(100% + 30px) !important;
+  margin: 3px 0 0 -15px !important;
   border-radius: 24px !important;
   overflow: hidden !important;
   box-sizing: border-box !important;
@@ -389,6 +403,12 @@ ytmusic-player-bar {
   overflow: hidden !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
+}
+
+#primaryProgress,
+#secondaryProgress {
+  height: 6px !important;
+  margin-top: -1px !important;
 }
 
 /* Buttons Material You */
@@ -448,7 +468,7 @@ tp-yt-paper-icon-button#right {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
   padding: 16px !important;
   margin: 8px !important;
-  margin-top: -40px !important;
+  margin-top: 10px !important;
   overflow: hidden !important;
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
