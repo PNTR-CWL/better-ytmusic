@@ -18,6 +18,6 @@ Playerbar expands and contracts as it closes and as the song screen is opened or
 ### Links:
 [Discord](https://discord.gg/2eCpbXadsC)
 <h3>Before</h3>
-<img src="before" width="50%">
+<img src="before.png" width="50%">
 <h3>After</h3>
-<img src="after" width="50%">
+<img src="after.png" width="50%">
