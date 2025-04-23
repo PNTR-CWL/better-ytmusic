@@ -1,3 +1,4 @@
+
 html:not(.style-scope) #mini-guide-background,
 ytmusic-app-layout #mini-guide-background,
 div#mini-guide-background[aria-hidden="true"] {
@@ -41,7 +42,7 @@ ytmusic-player-queue-item {
   
   /* Now playing track */
   ytmusic-player-queue-item[selected] {
-    background-color: rgb(211, 211, 211, 0.15) !important; /* Używamy koloru złotego z twojego motywu */
+    background-color: rgb(211, 211, 211, 0.15) !important;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
   }
   
@@ -180,6 +181,25 @@ tp-yt-paper-icon-button#play-pause-button:hover {
 #progress-bar.ytmusic-player-bar {
   --paper-slider-knob-start-border-color: var(--ytmusic-color-white1) !important;
   --paper-slider-knob-start-color: var(--ytmusic-color-white1) !important;
+}
+
+#progress-bar.ytmusic-player-bar,
+.progress-container,
+.bar-container.style-scope.tp-yt-paper-slider,
+#sliderContainer,
+#primaryProgress,
+#secondaryProgress {
+  border-radius: 999px !important;
+}
+
+.progress-container {
+  background: #444 !important;
+}
+
+#progress-bar.ytmusic-player-bar #sliderBar,
+#progress-bar.ytmusic-player-bar #primaryProgress,
+#progress-bar.ytmusic-player-bar #secondaryProgress {
+  border-radius: 999px !important;
 }
 
 /* Rounded buttons */
@@ -384,8 +404,7 @@ ytmusic-player-bar {
 }
 
 #progress-bar.ytmusic-player-bar {
-  width: calc(100% + 30px) !important;
-  margin: 3px 0 0 -15px !important;
+  margin: 2px 0 0 -10px !important;
   border-radius: 24px !important;
   overflow: hidden !important;
   box-sizing: border-box !important;
@@ -411,7 +430,7 @@ ytmusic-player-bar {
   margin-top: -1px !important;
 }
 
-/* Buttons Material You */
+/* Buttons */
 tp-yt-paper-icon-button#left,
 tp-yt-paper-icon-button#right {
   background: rgba(229, 193, 0, 0.08) !important;
@@ -461,7 +480,7 @@ tp-yt-paper-icon-button#right {
   display: none !important;
 }
 
-/* Side panel in Material You */
+/* Side panel */
 #side-panel {
   background: rgba(32, 32, 32, 0.9) !important;
   border-radius: 16px !important;
