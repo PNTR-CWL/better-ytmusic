@@ -1,3 +1,5 @@
+
+
 # Better YTMusic
 ## This project aims to make yt music better, inspired by material you
  This project is in alpha, please report any bugs and ideas for further improvements
@@ -15,3 +17,7 @@ Playerbar expands and contracts as it closes and as the song screen is opened or
 
 ### Links:
 [Discord](https://discord.gg/2eCpbXadsC)
+<h3>Before</h3>
+<img src="before" width="50%">
+<h3>After</h3>
+<img src="after" width="50%">
