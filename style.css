@@ -1,3 +1,4 @@
+/* CSS for YouTube Music by penetrator */
 
 html:not(.style-scope) #mini-guide-background,
 ytmusic-app-layout #mini-guide-background,
@@ -7,23 +8,12 @@ div#mini-guide-background[aria-hidden="true"] {
   visibility: hidden !important;
 }
 
-/* Hide nav-bar-background */
-#nav-bar-background.style-scope.ytmusic-app-layout,
-div#nav-bar-background[aria-hidden="true"],
-ytmusic-app-layout #nav-bar-background {
+ytmusic-app-layout[player-page-open] #nav-bar-background,
+#nav-bar-background[player-page-open] {
   display: none !important;
   opacity: 0 !important;
   visibility: hidden !important;
 }
-
-
-ytmusic-app-layout[player-page-open] #nav-bar-background.ytmusic-app-layout, 
-ytmusic-app-layout.content-scrolled #nav-bar-background.ytmusic-app-layout, 
-ytmusic-app-layout.content-scrolled #nav-bar-divider.ytmusic-app-layout, 
-ytmusic-app-layout[is-bauhaus-sidenav-enabled][player-page-open] #mini-guide-background.ytmusic-app-layout {
-  opacity: 0 !important;
-}
-
 
 /* Rounded tracks */
 ytmusic-player-queue-item {
@@ -73,44 +63,53 @@ ytmusic-player-queue-item {
     padding-top: 0px !important;
   }
 
-  /* Scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px !important;
-    height: 8px !important;
-  }
+
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
   
-  ::-webkit-scrollbar-track {
-    background: transparent !important;
-    border-radius: 10px !important;
-    margin: 2px !important;
-  }
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+ytmusic-app-layout::-webkit-scrollbar {
+  display: none !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+  border-radius: 10px !important;
+  margin: 2px !important;
+}
   
-  ::-webkit-scrollbar-thumb {
-    background: rgba(123, 124, 124, 0.4) !important;
-    border-radius: 10px !important;
-    border: 2px solid transparent !important;
-    background-clip: padding-box !important;
-    transform: scale(1) !important;
-    transition: all 0.2s ease-in-out !important;
-  }
+::-webkit-scrollbar-thumb {
+  background: rgba(123, 124, 124, 0.4) !important;
+  border-radius: 10px !important;
+  border: 2px solid transparent !important;
+  background-clip: padding-box !important;
+  transform: scale(1) !important;
+  transition: all 0.2s ease-in-out !important;
+}
   
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(123, 124, 124, 0.812) !important;
-    transform: scale(1.1) !important;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(123, 124, 124, 0.812) !important;
+  transform: scale(1.1) !important;
+}
   
-  ::-webkit-scrollbar-corner {
-    background: transparent !important;
-  }
+::-webkit-scrollbar-corner {
+  background: transparent !important;
+}
   
-  .scroll-container {
-    scrollbar-width: thin !important;
-    scrollbar-color: rgba(123, 124, 124, 0.4) transparent !important;
-  }
+.scroll-container {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(123, 124, 124, 0.4) transparent !important;
+}
   
-  ytmusic-app-layout {
-    overflow: overlay !important;
-    padding-bottom: 90px !important;
+ytmusic-app-layout {
+  overflow: overlay !important;
+  padding-bottom: 90px !important;
   }
 
 
@@ -189,17 +188,15 @@ tp-yt-paper-icon-button#play-pause-button:hover {
 #sliderContainer,
 #primaryProgress,
 #secondaryProgress {
-  border-radius: 999px !important;
-}
-
-.progress-container {
-  background: #444 !important;
+  border-radius: 8px !important;
+  overflow: visible !important;
 }
 
 #progress-bar.ytmusic-player-bar #sliderBar,
 #progress-bar.ytmusic-player-bar #primaryProgress,
 #progress-bar.ytmusic-player-bar #secondaryProgress {
-  border-radius: 999px !important;
+  border-radius: 8px !important;
+  overflow: visible !important;
 }
 
 /* Rounded buttons */
@@ -515,5 +512,39 @@ tp-yt-paper-icon-button#right {
 #volume-slider #secondaryProgress,
 #volume-slider #sliderContainer {
   transition: none !important;
+}
+
+#volume-slider {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  width: 80px !important;
+  transition: none !important;
+  transform: translateX(-25px) !important;
+}
+
+#volume-slider[hidden],
+#volume-slider[style*="display: none"],
+#volume-slider[style*="opacity: 0"] {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.ytmusic-player-bar #volume-slider,
+.ytmusic-player-bar paper-slider#volume-slider {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  display: block !important;
+}
+
+#volume-slider #sliderKnobContainer {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  pointer-events: none !important;
 }
 
