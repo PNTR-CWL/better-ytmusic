@@ -1,5 +1,9 @@
 /* CSS for YouTube Music by penetrator */
 
+/* Icons */
+
+/* idk how to make it work */
+
 /* Colors */
 :root {
   --ytm-bg-main: rgba(32, 32, 32, 0.98);
@@ -22,7 +26,7 @@
   --ytm-shadow-btn-hover: 0 4px 8px rgba(0, 0, 0, 0.3);
   --ytm-border-main: 2px solid rgba(120,120,120,0.10);
   --ytm-scrollbar: rgba(120, 120, 120, 0.4);
-  --ytm-scrollbar-hover: rgba(180, 180, 180, 0.7);
+  --ytm-scrollbar-hover: rgba(150, 150, 150, 0.6);
   --ytm-text-primary: #f3f3f3;
 }
 
@@ -552,4 +556,14 @@ tp-yt-paper-icon-button#right {
   width: 0 !important;
   height: 0 !important;
   pointer-events: none !important;
+}
+
+
+
+
+/* Artist screen */
+
+/* Large artist name in header */
+yt-formatted-string.title.style-scope.ytmusic-immersive-header-renderer[role="heading"] {
+  font-size: 100px !important;
 }
