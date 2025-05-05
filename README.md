@@ -6,7 +6,7 @@ This project is currently in **alpha** — please report any bugs or share your 
 
 
 
-✅ **Tested on this desktop version:**  
+✅ **Tested and optimized for this desktop version:**  
 [YTM by th-ch](https://github.com/th-ch/youtube-music)
 
 ---
@@ -48,3 +48,10 @@ or
 ## ⚠️ Known Issues
 
 - All sliders (progress and volume) are rounded based on the current percentage. (and i don't really know how to fix this)
+
+
+## 🙌 Credits
+
+- **Author:** [penetrator](https://github.com/IeFHC233)
+- **Special thanks to:**  
+  - AI (mostly github copilot)
