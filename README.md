@@ -1,10 +1,10 @@
-# Better YTMusic
+# 🎶 Better YTMusic
 
 
-🎵 **Better YTMusic** is a project that aims to improve the look and feel of YouTube Music, inspired by Material You.  
-This project is currently in **alpha** — please report any bugs or share your ideas for improvements!
+ **Better YTMusic** is a project that aims to improve the look and feel of YouTube Music, inspired by Material You.  
+This project is currently in **alpha** — please report any bugs or share your ideas for improvements on [Discord](https://discord.gg/2eCpbXadsC)
 
----
+
 
 ✅ **Tested on this desktop version:**  
 [YTM (github.com/th-ch/youtube-music)](https://github.com/th-ch/youtube-music)
@@ -50,12 +50,3 @@ C:\Users\YourUsername\AppData\Roaming\YouTube Music
 ## ⚠️ Known Issues
 
 - All sliders (progress and volume) are rounded based on the current percentage. (and i don't really know how to fix this)
-
----
-
-## 🔗 Links
-
-- [Discord](https://discord.gg/2eCpbXadsC)
----
-
-
