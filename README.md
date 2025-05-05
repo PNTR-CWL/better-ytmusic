@@ -7,7 +7,7 @@ This project is currently in **alpha** — please report any bugs or share your 
 
 
 ✅ **Tested on this desktop version:**  
-[YTM (github.com/th-ch/youtube-music)](https://github.com/th-ch/youtube-music)
+[YTM by th-ch](https://github.com/th-ch/youtube-music)
 
 ---
 
