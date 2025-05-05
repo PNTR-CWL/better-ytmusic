@@ -37,13 +37,11 @@ I also recommend using my [config.json](https://github.com/PNTR-CWL/better-ytmus
 
 📁 **Place the file in this localization:**
 
-<pre>
-Windows:
-%appdata%\YouTube Music
 
-Full path example:
-C:\Users\YourUsername\AppData\Roaming\YouTube Music
-</pre>
+`%appdata%\YouTube Music`
+or
+`C:\Users\YourUsername\AppData\Roaming\YouTube Music`
+
 
 ---
 
