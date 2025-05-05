@@ -33,7 +33,7 @@ This project is currently in **alpha** — please report any bugs or share your 
    
 
 
-I also recommend using my [config.json](https://github.com/PNTR-CWL/better-ytmusic/blob/38571496b7aca607944be2f17233ed16b2071f60/config.json).
+I also recommend using my `config.json`
 
 📁 **Place the file in this localization:**
 
@@ -42,6 +42,10 @@ I also recommend using my [config.json](https://github.com/PNTR-CWL/better-ytmus
 or
 `C:\Users\YourUsername\AppData\Roaming\YouTube Music`
 
+Both files can be downloaded from:
+`code (more frequent updates)`
+or 
+`releases tab (bigger updates)`
 
 ---
 
