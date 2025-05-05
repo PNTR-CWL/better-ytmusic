@@ -1,24 +1,61 @@
-
-
 # Better YTMusic
-## This project aims to make yt music better, inspired by material you
- This project is in alpha, please report any bugs and ideas for further improvements
-<br>
-
-tested on this version of yt desktop:
-[YTM](https://github.com/th-ch/youtube-music)
-
-<h3>How to make it work</h3>
-<h4>Download style.css</h4>
-<h4>Options --> Visual Tweaks --> Theme --> Import custom CSS file --> Select Downloaded file</h4>
-
-<h3>Known issues:</h3>
-All stripes (progress and volume) are rounded as much as the progress of the song / volume is in %
 
 
-### Links:
-[Discord](https://discord.gg/2eCpbXadsC)
-<h3>Before</h3>
-<img src="before.png" width="50%">
-<h3>After</h3>
-<img src="after.png" width="50%">
+🎵 **Better YTMusic** is a project that aims to improve the look and feel of YouTube Music, inspired by Material You.  
+This project is currently in **alpha** — please report any bugs or share your ideas for improvements!
+
+---
+
+✅ **Tested on this desktop version:**  
+[YTM (github.com/th-ch/youtube-music)](https://github.com/th-ch/youtube-music)
+
+---
+
+## 📸 Images
+
+<p align="center">
+  <img src="before.png" width="45%" style="display:inline-block; margin-right:10px;">
+  <img src="after.png" width="45%" style="display:inline-block;">
+</p>
+
+<p align="center">
+  <b>Before</b>
+  <b>After</b>
+</p>
+
+---
+
+## ⚙️ Configuration
+
+1. Download the `style.css` file.
+2. Go to:  
+   `Options → Visual Tweaks → Theme → Import custom CSS file → Select the downloaded file`.
+   
+
+
+I also recommend using my [config.json](https://github.com/PNTR-CWL/better-ytmusic/blob/38571496b7aca607944be2f17233ed16b2071f60/config.json).
+
+📁 **Place the file in this localization:**
+
+<pre>
+Windows:
+%appdata%\YouTube Music
+
+Full path example:
+C:\Users\YourUsername\AppData\Roaming\YouTube Music
+</pre>
+
+---
+
+## ⚠️ Known Issues
+
+- All sliders (progress and volume) are rounded based on the current percentage. (and i don't really know how to fix this)
+
+---
+
+## 🔗 Links
+
+- [Discord](https://discord.gg/2eCpbXadsC)
+---
+
+
