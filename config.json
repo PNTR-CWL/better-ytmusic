@@ -1,0 +1,216 @@
+{
+	"window-size": {
+		"width": 1377,
+		"height": 849
+	},
+	"window-maximized": false,
+	"window-position": {
+		"x": 270,
+		"y": 200
+	},
+	"url": "",
+	"options": {
+		"tray": true,
+		"appVisible": true,
+		"autoUpdates": true,
+		"alwaysOnTop": false,
+		"hideMenu": false,
+		"hideMenuWarned": true,
+		"startAtLogin": false,
+		"disableHardwareAcceleration": false,
+		"removeUpgradeButton": true,
+		"restartOnConfigChanges": false,
+		"trayClickPlayPause": false,
+		"autoResetAppCache": false,
+		"resumeOnStart": false,
+		"likeButtons": "",
+		"proxy": "",
+		"startingPage": "",
+		"overrideUserAgent": false,
+		"usePodcastParticipantAsArtist": false,
+		"themes": [
+			""
+		],
+		"language": "en"
+	},
+	"plugins": {
+		"notifications": {
+			"enabled": true
+		},
+		"video-toggle": {
+			"enabled": false,
+			"hideVideo": true,
+			"mode": "custom",
+			"forceHide": false,
+			"align": "left"
+		},
+		"precise-volume": {
+			"globalShortcuts": {},
+			"enabled": true
+		},
+		"discord": {
+			"enabled": true,
+			"autoReconnect": true,
+			"activityTimeoutEnabled": true,
+			"activityTimeoutTime": 1000,
+			"playOnYouTubeMusic": true,
+			"hideGitHubButton": true,
+			"hideDurationLeft": false,
+			"listenAlong": true
+		},
+		"taskbar-mediacontrol": {
+			"enabled": false
+		},
+		"bypass-age-restrictions": {
+			"enabled": true
+		},
+		"crossfade": {
+			"enabled": true,
+			"fadeInDuration": 1000,
+			"fadeOutDuration": 1000,
+			"secondsBeforeEnd": 3,
+			"fadeScaling": "logarithmic"
+		},
+		"downloader": {
+			"enabled": true,
+			"downloadFolder": "C:\\Users\\Piotr\\Music\\YT Music",
+			"downloadOnFinish": {
+				"enabled": false,
+				"seconds": 20,
+				"percent": 10,
+				"mode": "seconds"
+			},
+			"selectedPreset": "mp3 (256kbps)",
+			"customPresetSetting": {
+				"extension": "mp3",
+				"ffmpegArgs": [
+					"-b:a",
+					"256k"
+				]
+			},
+			"skipExisting": true
+		},
+		"skip-disliked-songs": {
+			"enabled": true
+		},
+		"sponsorblock": {
+			"enabled": false
+		},
+		"exponential-volume": {
+			"enabled": false
+		},
+		"blur-nav-bar": {
+			"enabled": true
+		},
+		"lyrics-genius": {
+			"enabled": false,
+			"romanizedLyrics": true
+		},
+		"visualizer": {
+			"enabled": false
+		},
+		"quality-changer": {
+			"enabled": false
+		},
+		"playback-speed": {
+			"enabled": false
+		},
+		"compact-sidebar": {
+			"enabled": true
+		},
+		"audio-compressor": {
+			"enabled": false
+		},
+		"lumiastream": {
+			"enabled": false
+		},
+		"album-color-theme": {
+			"enabled": true,
+			"ratio": 0.1
+		},
+		"tuna-obs": {
+			"enabled": false
+		},
+		"adblocker": {
+			"enabled": true,
+			"cache": true,
+			"blocker": "With blocklists",
+			"additionalBlockLists": [],
+			"disableDefaultLists": false
+		},
+		"no-google-login": {
+			"enabled": false
+		},
+		"captions-selector": {
+			"enabled": false
+		},
+		"album-actions": {
+			"enabled": false
+		},
+		"synced-lyrics": {
+			"enabled": true,
+			"preciseTiming": false,
+			"showLyricsEvenIfInexact": true,
+			"showTimeCodes": false,
+			"defaultTextString": "♪",
+			"lineEffect": "focus",
+			"romanization": false
+		},
+		"music-together": {
+			"enabled": false
+		},
+		"picture-in-picture": {
+			"enabled": false,
+			"alwaysOnTop": true,
+			"savePosition": true,
+			"saveSize": false,
+			"hotkey": "P",
+			"pip-position": [
+				10,
+				10
+			],
+			"pip-size": [
+				450,
+				275
+			],
+			"isInPiP": true,
+			"useNativePiP": true
+		},
+		"ambient-mode": {
+			"enabled": true,
+			"quality": 10,
+			"buffer": 30,
+			"interpolationTime": 3000,
+			"blur": 150,
+			"size": 150,
+			"opacity": 0.3,
+			"fullscreen": false
+		},
+		"api-server": {
+			"enabled": false,
+			"hostname": "127.0.0.1",
+			"port": 26538,
+			"authStrategy": "NONE",
+			"secret": "m2ys3q22",
+			"authorizedClients": []
+		},
+		"amuse": {
+			"enabled": false
+		},
+		"equalizer": {
+			"enabled": false,
+			"filters": [],
+			"presets": {
+				"bass-booster": false
+			}
+		},
+		"in-app-menu": {
+			"enabled": true
+		}
+	},
+	"__internal__": {
+		"migrations": {
+			"version": "3.9.0"
+		}
+	}
+}
