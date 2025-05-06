@@ -53,6 +53,17 @@ or
 
 - All sliders (progress and volume) are rounded based on the current percentage. (and i don't really know how to fix this)
 
+---
+
+## 🚀 Planned Features / To-Do
+
+- Online editor (switch on and off features that u don't like)
+- Enchance screen for artists and home screen
+- Make the code so that you don't want to kill him after seeing
+
+
+---
+
 
 ## 🙌 Credits
 
