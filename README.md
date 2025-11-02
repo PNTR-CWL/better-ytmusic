@@ -67,6 +67,6 @@ or
 
 ## 🙌 Credits
 
-- **Author:** [penetrator](https://github.com/IeFHC233)
+- **Author:** [penetrator](https://github.com/penetratorcwl)
 - **Special thanks to:**  
   - AI (mostly github copilot)
