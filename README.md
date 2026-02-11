@@ -59,7 +59,7 @@ or
 
 - Online editor (switch on and off features that u don't like)
 - Enchance screen for artists and home screen
-- Make the code so that you don't want to kill him after seeing
+- Make the code so that you don't want to kill yourself after seeing
 
 
 ---
@@ -67,6 +67,6 @@ or
 
 ## 🙌 Credits
 
-- **Author:** [penetrator](https://github.com/penetratorcwl)
+- **Author:** [penetrator](https://github.com/penetratorcwl) (me)
 - **Special thanks to:**  
   - AI (mostly github copilot)
